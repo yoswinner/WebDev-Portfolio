@@ -479,9 +479,46 @@ section {
     font-size: 2.5rem;
 }
 
+/* ==================== PROJECTS SECTION ==================== */
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;        
+}
+
+.project-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.project-icon {
+    font-size: 2.5rem;
+}
+
 .project-header h3 {
     font-size: 1.8rem;
     color: var(--text-primary);
+}
+
+/* New CSS for the clickable link icon */
+.demo-link {
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    padding: 5px;
+}
+
+.demo-link:hover {
+    color: var(--accent-green);
+    transform: translateY(-2px) scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.5));
 }
 
 .project-desc {
